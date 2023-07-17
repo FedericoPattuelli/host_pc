@@ -28,7 +28,7 @@ $lines = Get-Content -Path $hostFilePath
 $modifiedLines = @()
 
 # Iterate through each line in the host file and check if it contains a name in $names
-# if it does, add it to the modified lines
+# if it doesn't, add it to the modified lines
 foreach ($line in $lines) {
     $lineContainsName = $false
     foreach ($name in $names) {
